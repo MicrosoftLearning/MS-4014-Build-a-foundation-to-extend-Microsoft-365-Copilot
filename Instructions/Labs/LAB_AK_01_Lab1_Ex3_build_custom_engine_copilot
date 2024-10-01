@@ -1,1 +1,41 @@
+---
+lab:
+    title: 'Lab: Build your first agent'
+    type: 'Answer Key'
+    module: 'Module 5: Understand how to build your first agent'
+---
 
+# Lab: Build your first custom engine copilot
+# Student lab answer key
+
+## Instructions
+
+### Before you start
+
+#### Get your data ready
+
+1.  First, clearly define the purpose and scope of your Custom Engine Copilot. In this case, the Copilot will streamline project management by integrating various data sources and automating routine tasks.
+1. Collect all relevant project data from different sources, such as Microsoft Project, SharePoint, and third-party applications. Ensure that the data is well-organized and accessible.
+
+### Exercise 3: 
+
+#### Task 1: Gather and Organize Project Data
+
+1.  Collect all relevant project data from different sources, such as Microsoft Project, SharePoint, and third-party applications. Ensure that the data is well-organized and accessible.
+
+#### Task 2: Set up Data Integration
+
+1.  Use APIs or connectors to integrate data from Microsoft Project, SharePoint, and third-party applications. Ensure that the data is synchronized and up-to-date.
+1.  Develop a unified data model that consolidates information from all data sources. This model should include project timelines, resource allocation, task status, and other relevant data.
+
+#### Task 3: Develop the Copilot's Logic and Functionality
+
+1. Using the Copilot SDK, develop the logic and functionality for your Custom Engine Copilot. Here’s how you can do it. Let's look specifically at how to enhance collaboration:
+  1. Integrate the Copilot with Microsoft Teams to facilitate collaboration.
+  1. Implement features to automatically schedule meetings, share project updates, and provide real-time insights during discussions.
+
+#### Task 4: Test, refine, deploy and monitor the Copilot
+
+1.  Test the Copilot with a small group of project managers. Gather feedback and make the adjustments necessary to improve the Copilot's performance and user experience.
+1.  Deploy the Copilot to all project manager. Ensure that it is integrated with the tools and platforms used by the project management team.
+1.  Continuously monitor the Copilot's performance and gather feedback. 
