@@ -1,4 +1,4 @@
-# Practice Lab 0101: Configure the connections for your Microsoft Graph connector
+# Practice Lab 1: Configure the connections for your Microsoft Graph connector
 
 ## WWL Tenants - Terms of Use
 
