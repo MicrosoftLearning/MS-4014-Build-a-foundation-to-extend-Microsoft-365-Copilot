@@ -12,7 +12,11 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 In this lab, you'll use the Microsoft 365 admin center to build a connection to customer files using the Microsoft File Share Connector.
 
+Imagine you are a customer service manager at Contoso, a mid-sized company. Your team has been struggling with response times and overall efficiency when handling customer inquiries. You decide to leverage the Microsoft 365 Admin center to create a FileShare connection that allows your customer service agents to quickly access and reference customer files.
+
 ## Exercise 1: Configure the connections in the Microsoft 365 admin center
+
+### Log in to the VM
 
 Your lab-hosting provider provides a password for the MOD Administrator account, which is the default tenant administrator. For security purposes, Microsoft has configured your trial tenant so that all predefined users must change their password at their next sign-in. Log into **LON-CL1** as the local **Administrator** account that was created by your lab hosting provider with the password **Pa55w.rd**.
 
@@ -25,7 +29,7 @@ Your lab-hosting provider provides a password for the MOD Administrator account,
 
 The next step is to grant permissions for the Graph connector agent:
 
-1. Select **Manage ->** **API Permissions option from the left-menu.**
+1. Select **Manage -> API Permissions** option from the left-menu.
 1. Select **Add a permission -> Microsoft - > Graph, Application -> Permissions**, and allow permissions to the following APIs:
 
     - ExternalItem.ReadWrite.All
@@ -35,19 +39,18 @@ The next step is to grant permissions for the Graph connector agent:
 1. Select the **Add permissions** button.
 1. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
 
-
 ### Task 2: Install the GCA
 
 1. Download the [Graph connector agent] (https://www.microsoft.com/en-us/download/details.aspx?id=104045). Select the **Download** button.
 1. Open the GcaInstaller_3.1.1.0.msi file and follow the prompts in the Setup wizard.
-1. Sign in and Register (sign in with admin name and password) the GCA.
+1. Sign in and Register (sign in with the admin name and password) the GCA.
 1. Open the Graph Connector Agent Installation app by selecting the icon in the bottom tool bar of the screen.
-1. Register the GCA - Name this agent (ContosoFiles).
-1. Select the Azure portal Microsoft Edge tab (Should read Contoso Fileshare - Microsoft Azure), navigate to the Overview screen and copy the Application (client) ID. Paste it into the GCA installation app.
+1. Register the GCA. Name this agent **ContosoFiles**.
+1. Select the Azure portal Microsoft Edge tab (Should read **Contoso Fileshare - Microsoft Azure**), navigate to the **Overview** screen and copy the **Application (client) ID**. Paste it into the GCA installation app.
 
 Next, you need to set a Client Secret for this app in the Azure portal.
 
-1. Return to the Azure portal edge tab and navigate to Certificates & secrets.
+1. Return to the Azure portal edge tab and navigate to **Certificates & secrets**.
 1. Select **+ new client secret.** Add a **Description** by entering **Contoso Files**.
 
 > [!IMPORTANT]
@@ -57,7 +60,7 @@ Next, you need to set a Client Secret for this app in the Azure portal.
 1. Select **Register.**
 1. Close the Installer app.
 
-### Task 3: Open the Microsoft Admin center
+### Task 3: Open the Microsoft admin center
 
 1. Open a new Microsoft Edge browser tab. In your Microsoft Edge browser, go to the **Microsoft 365 Home** page by entering the following URL in the address bar: **<https://portal.office.com>**
 1. In the **Sign in** dialog box, enter the **Administrative Username** provided by your lab hosting provider for your Microsoft 365 trial tenant. The username should be in the form of **<admin@xxxxxZZZZZZ.onmicrosoft.com>**, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider. Select **Next**.
@@ -86,8 +89,6 @@ This path is the directory where the files are stored.
 1. Select the check box to authorize Microsoft to create an index of third-party data in your tenant.
 1. Select **Create**.
 
-A success screen appears, and your connector syncs. You can enter the specific type of content, the departments in your organization who may benefit from its use, or examples of workflows in the **Connector description** box. For example:
+A success screen appears, and your connection syncs. You can enter the specific type of content, the departments in your organization who may benefit from its use, or examples of workflows in the **Connector description** box. For example:
 
-This connector contains information contained in the on-premises or on-premises file share server. It includes customer profiles and customer questions that may benefit the support desk in answering customer queries.
-
-1. Once you published your Graph connector, you can deploy it in Teams with a single click in the Teams admin center. For more information, see [Deploy Microsoft Graph connectors in Teams admin center | Microsoft Learn](/microsoftsearch/connectors-deploy-teams).
+**This connector contains information contained in the on-premises or on-premises file share server. It includes customer profiles and customer questions that may benefit the support desk in answering customer queries.**
