@@ -22,28 +22,29 @@ Your lab-hosting provider provides a password for the MOD Administrator account,
 
 ### Task 1: Grant permissions in the Azure portal
 
-1. Go to the Azure portal and sign in with your admin credentials.
+1. Go to the Azure portal (www.portal.azure.com)  and sign in with your Administrative credentials. Do not save the passwword, and select Yes to **Stay signed in?**.
+2. On the **Welcome to Microsoft Azure** screen, select **Cancel**.
 1. Select the dropdown menu icon on the left side of the screen to display the Portal menu. Select** **Microsoft Entra ID -> Manage -> App registrations**.
-1. Select **New registration** from the top menu bar. The Register an application page displays. On this page, provide a name for the app; let's name this app _Contoso Fileshare_. Leave the default supported account types option as **Accounts in this organizational directory only (Contoso only - Single tenant).**
+1. Select **New registration** from the top menu bar. The **Register an application page** displays. On this page, provide a name for the app; let's name this app _Contoso Fileshare_. Leave the default supported account types option as **Accounts in this organizational directory only (Contoso only - Single tenant).** Do not select an optional **Redirect URI**.
 1. Select **Register.** Your application is created, and an application ID is assigned to it. You'll use this information when you create your Graph Connector Agent (GCA) in the following steps. Before we create the GCA, however, let's configure the necessary settings.
 
-The next step is to grant permissions for the Graph connector agent:
+The next step is to grant permissions for the Graph connector agent in the Azure Portal:
 
 1. Select **Manage -> API Permissions** option from the left-menu.
-1. Select **Add a permission -> Microsoft - > Graph, Application -> Permissions**, and allow permissions to the following APIs:
+1. Select **Add a permission -> Microsoft Graph -> Application permissions**, and allow permissions to the following APIs:
 
-    - ExternalItem.ReadWrite.All
-    - ExternalConnection.ReadWrite.OwnedBy
-    - Directory.Read.All
-
+    - Directory -> Directory.Read.All
+    - ExternalConnection -> ExternalConnection.ReadWrite.OwnedBy
+    - ExternalItem -> ExternalItem.ReadWrite.All
+      
 1. Select the **Add permissions** button.
-1. Select **Grant admin consent for [TenantName]** and confirm by selecting **Yes**.
+1. Select **Grant admin consent for Contoso** and confirm by selecting **Yes**.
 
 ### Task 2: Install the GCA
 
 1. Download the [Graph connector agent] (https://www.microsoft.com/en-us/download/details.aspx?id=104045). Select the **Download** button.
 1. Open the GcaInstaller_3.1.1.0.msi file and follow the prompts in the Setup wizard.
-1. Sign in and Register (sign in with the admin name and password) the GCA.
+1. Sign in and Register the GCA using the administrative name and password) .
 1. Open the Graph Connector Agent Installation app by selecting the icon in the bottom tool bar of the screen.
 1. Register the GCA. Name this agent **ContosoFiles**.
 1. Select the Azure portal Microsoft Edge tab (Should read **Contoso Fileshare - Microsoft Azure**), navigate to the **Overview** screen and copy the **Application (client) ID**. Paste it into the GCA installation app.
