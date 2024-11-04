@@ -78,7 +78,7 @@ From here, a list of available data sources is listed. We're configuring a conne
 1. Enter the **Display Name**. The display name is a unique name that is displayed to users. Let's enter **Contoso Files** in the field.
 1. Enter the **Folder path.** We have sample files configured at the following directory:
 
-   **C:\Users\Administrator.ADATUM\Documents\Contoso Docs**
+   **C:\ResourceFiles**
 
 This path is the directory where the files are stored.
 
