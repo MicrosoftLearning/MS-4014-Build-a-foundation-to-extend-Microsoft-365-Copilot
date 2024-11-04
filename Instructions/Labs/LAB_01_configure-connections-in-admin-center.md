@@ -22,7 +22,7 @@ Your lab-hosting provider provides a password for the MOD Administrator account,
 
 ### Task 1: Grant permissions in the Azure portal
 
-1. Go to the Azure portal (www.portal.azure.com)  and sign in with your Administrative credentials. Do not save the passwword, and select Yes to **Stay signed in?**.
+1. Navigate to the Azure portal **https://www.portal.azure.com** and sign in with your Administrative credentials. Do not save the passwword, and select Yes to **Stay signed in?**.
 2. On the **Welcome to Microsoft Azure** screen, select **Cancel**.
 1. Select the dropdown menu icon on the left side of the screen to display the Portal menu. Select** **Microsoft Entra ID -> Manage -> App registrations**.
 1. Select **New registration** from the top menu bar. The **Register an application page** displays. On this page, provide a name for the app; let's name this app _Contoso Fileshare_. Leave the default supported account types option as **Accounts in this organizational directory only (Contoso only - Single tenant).** Do not select an optional **Redirect URI**.
@@ -42,7 +42,7 @@ The next step is to grant permissions for the Graph connector agent in the Azure
 
 ### Task 2: Install the GCA
 
-1. Download the [Graph connector agent] (https://www.microsoft.com/en-us/download/details.aspx?id=104045). Select the **Download** button.
+1. Navigate to the following URL to download the Graph Connector Agent: **https://www.microsoft.com/en-us/download/details.aspx?id=104045**. Select the **Download** button.
 1. Open the GcaInstaller_3.1.1.0.msi file and follow the prompts in the Setup wizard.
 1. Sign in and Register the GCA using the administrative name and password) .
 1. Open the Graph Connector Agent Installation app by selecting the icon in the bottom tool bar of the screen.
@@ -63,11 +63,8 @@ Next, you need to set a Client Secret for this app in the Azure portal.
 
 ### Task 3: Open the Microsoft admin center
 
-1. Open a new Microsoft Edge browser tab. In your Microsoft Edge browser, go to the **Microsoft 365 Home** page by entering the following URL in the address bar: **<https://portal.office.com>**
+1. Open a new Microsoft Edge browser tab. In your Microsoft Edge browser, go to the **Microsoft 365 Home** page by entering the following URL in the address bar: **https://portal.office.com**
 1. In the **Sign in** dialog box, enter the **Administrative Username** provided by your lab hosting provider for your Microsoft 365 trial tenant. The username should be in the form of **<admin@xxxxxZZZZZZ.onmicrosoft.com>**, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider. Select **Next**.
-
-**Note:** In the lab instructions that appear in your Virtual Machine lab environment, your lab hosting provider may allow you to select a **Type text** (or equivalent) button next to resource data such as usernames, passwords, PowerShell commands, and other data that must be entered throughout the course of these labs. Other lab hosting providers may provide an alternative method, such as the ability to copy and paste in the information. Take advantage of this functionality to save yourself from having to manually enter the information.
-
 1. In the **Enter password** dialog box, enter the predefined **Administrative Password** provided by your lab hosting provider and then select **Sign in**.
 1. Your lab hosting provider may or may not have configured the Admin account to require a new password at sign-in. If they did, then an **Update your password** dialog box appears. Enter the **Administrative Password** provided by your lab hosting provider in the **Current password** field, and then enter the New Administrative Password in the **New password** and **Confirm password** fields and select **Sign in**.
 1. The **Welcome to Microsoft 365** page appears in your Microsoft Edge browser in the **Home | Microsoft 365** tab. This page is the MOD Administrator's Microsoft 365 home page.
