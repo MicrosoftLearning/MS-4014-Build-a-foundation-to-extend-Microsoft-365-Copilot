@@ -44,11 +44,11 @@ The next step is to grant permissions for the Graph connector agent in the Azure
 
 ### Task 2: Install the GCA
 
-1. Navigate to the following URL to download the Graph Connector Agent: **https://www.microsoft.com/en-us/download/details.aspx?id=104045**. Select the **Download** button.
-1. Open the GcaInstaller_3.1.1.0.msi file and follow the prompts in the Setup wizard.
+1. Open a new Microsoft Edge browser tab. Navigate to the following URL to download the Graph Connector Agent: **https://www.microsoft.com/en-us/download/details.aspx?id=104045**. Select the **Download** button. 
+1. Open the GcaInstaller_3.1.1.0.msi file and follow the prompts in the Setup wizard. 
 2. In the **Search** bar at the bottom of the screen, enter **Graph connector agent config** and select the app from the menu when it appears.
 3. Allow the app to make changes to the device by selecting **Yes**.
-4. Sign in and Register the GCA using the Administrative name and password. A confirmation that Authentication is complete appears in the Edge browser. You can close this window.
+4. Sign in and Register the GCA using the **MOD Administrative** account. A confirmation that authentication is complete appears in the Edge browser. You can close this window.
 5. Open the GCA app by selecting the icon at the bottom of the screen.
 1. Name this agent **ContosoFiles**.
 1. Select the Azure portal Microsoft Edge tab (should read **Contoso Fileshare - Microsoft Azure**), navigate to the **Overview** screen and copy the **Application (client) ID**. Paste it into the GCA installation app.
@@ -61,12 +61,12 @@ Next, you need to set a Client Secret for this app in the Azure portal.
 3. Copy the **Value** filed of the slient secret.
 1. Return to the Graph connector agent app and paste the value into the **Application password (client secret)** field of the GCA installer app.
 1. Select **Register.**
-1. Close the Installer app.
+1. Once the registration is completed, close the Installer app.
 
 ### Task 3: Open the Microsoft admin center
 
 1. Open a new Microsoft Edge browser tab. In your Microsoft Edge browser, go to the **Microsoft 365 Home** page by entering the following URL in the address bar: **https://portal.office.com**
-1. If you are prompted to sign in, enter the **Administrative Username** and **Administrative Password** provided by your lab hosting provider for your Microsoft 365 trial tenant. The username should be in the form of **<admin@xxxxxZZZZZZ.onmicrosoft.com>**, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider. 
+1. If you are prompted to sign in, enter the LON-CL1 **Username** and **Password** provided by your lab hosting provider for your Microsoft 365 trial tenant. The username should be in the form of **<admin@xxxxxZZZZZZ.onmicrosoft.com>**, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider. 
 1. The **Welcome to Microsoft 365** page appears in your Microsoft Edge browser in the **Home | Microsoft 365** tab. This page is the MOD Administrator's Microsoft 365 home page.
 1. Select **Admin** from the list of application icons that appear in the navigation pane; this action opens the **Microsoft 365 admin center** in a new browser tab.
 1. Select **… Show all** to display the full navigation menu. Select **Settings** -> **Search & intelligence.**
@@ -85,8 +85,7 @@ This path is the directory where the files are stored.
 1. Select the GCA we created in the previous steps (ContosoFiles) in the **Graph connector agent** field if it isn't the default option.
 1. Select  **Windows** as the Authentication type, then enter the Administrative **Username** and **Password** for Windows authentication.
 1. Select the check box to authorize Microsoft to create an index of third-party data in your tenant.
-1. Select **Create**.
+1. Select **Create**.  A success screen appears, and your connection begins to sync. You can enter the specific type of content, the departments in your organization who may benefit from its use, or examples of workflows in the **Connector description** box. For example:
 
-A success screen appears, and your connection syncs. You can enter the specific type of content, the departments in your organization who may benefit from its use, or examples of workflows in the **Connector description** box. For example:
-
-**This connector contains information contained in the on-premises or on-premises file share server. It includes customer profiles and customer questions that may benefit the support desk in answering customer queries.**
+    **This connector contains information contained in the on-premises file share server. It includes customer profiles and customer questions that may benefit the support desk in answering customer queries.**
+1. Select **Done**. Your Connection now appears on the **Search & intelligence** tab of the Microsoft 365 admin center, and can be referenced in your search results or as you build a Microsoft 365 Copilot agent.
