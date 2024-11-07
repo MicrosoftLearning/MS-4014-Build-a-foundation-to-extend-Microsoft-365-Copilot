@@ -58,7 +58,7 @@ Next, you need to set a Client Secret for this app in the Azure portal.
 1. Return to the Azure portal edge tab and navigate to **Certificates & secrets**.
 1. Select **+ New client secret.** Add a **Description** by entering **Contoso Files**. You can leave the expiration field set to the default 180 days.
 2. Select **Add**.
-3. Copy the **Value** filed of the slient secret.
+3. Copy the **Value** field of the silent secret.
 1. Return to the Graph connector agent app and paste the value into the **Application password (client secret)** field of the GCA installer app.
 1. Select **Register.**
 1. Once the registration is completed, close the Installer app.
