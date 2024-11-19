@@ -72,8 +72,8 @@ To configure the connector using the GCA, you'll need files that are local to yo
 3. Select the **elipsis (more file actions)** button at the top-right of the screen, then select **Download**.
 4. Repeat step 3 for each of the remaining files.
 5. You can close this window once the downloads are complete.
-6. Create a new folder directly on your C:\ drive. Name the folder **ResourceFiles**.
-7. Open the **Download** folder to access the Contoso files you've downloaded from GitHub, and copy these files into the **C:\ResourceFiles** directory.
+6. Use the file explorer and navigate to the C:\ directory. Create a new folder named **ResourceFiles**.
+7. Open a new file explorer window and navigate to the **Download** folder to access the Contoso files you've downloaded from GitHub. Copy these files into the **C:\ResourceFiles** directory.
 
 You'll use these files as the source content for the connection you create in the Microsoft admin center.
 
