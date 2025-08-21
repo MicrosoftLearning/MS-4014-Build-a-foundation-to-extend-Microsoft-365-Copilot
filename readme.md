@@ -1,4 +1,4 @@
-# INF99X: Sample Course
+# MS-4014: Build a foundation to build AI agents and extend Microsoft 365 Copilot
 
 **Are you an MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 
