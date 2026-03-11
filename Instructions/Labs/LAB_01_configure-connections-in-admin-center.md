@@ -1,3 +1,16 @@
+---
+lab:
+  title: 'Practice Lab 1: Configure the connections for your Microsoft Graph connector'
+  description: If you're being provided with a tenant as a part of an instructor-led
+    training delivery, note that the tenant is made available to support the hands-on
+    labs in the instructor-led training.
+  duration: 116 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Microsoft Graph
+---
+
 # Practice Lab 1: Configure the connections for your Microsoft Graph connector
 
 ## WWL Tenants - Terms of Use
