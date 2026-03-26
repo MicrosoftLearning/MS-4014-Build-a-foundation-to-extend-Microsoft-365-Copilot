@@ -4,7 +4,7 @@ lab:
   description: In this lab, you'll use the Microsoft 365 admin center to build a connection to customer files using the Microsoft File Share Connector.
   duration: 116 minutes
   level: 200
-  islab: true
+  islab: false
   primarytopics:
     - Microsoft 365
     - Microsoft Graph
