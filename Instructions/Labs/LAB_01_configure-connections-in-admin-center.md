@@ -1,3 +1,15 @@
+---
+lab:
+  title: 'Practice Lab 1: Configure the connections for your Microsoft Graph connector'
+  description: In this lab, you'll use the Microsoft 365 admin center to build a connection to customer files using the Microsoft File Share Connector.
+  duration: 25 minutes
+  level: 200
+  islab: false
+  primarytopics:
+    - Microsoft 365
+    - Microsoft Graph
+---
+
 # Practice Lab 1: Configure the connections for your Microsoft Graph connector
 
 ## WWL Tenants - Terms of Use
